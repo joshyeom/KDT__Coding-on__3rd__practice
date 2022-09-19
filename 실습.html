@@ -1,0 +1,63 @@
+<!-- 실습 1. 카페 음료 문서 작성
+• 카페 이름은 <h1>, 메뉴 이름은 <h2>
+• 카페 전체 음료 리스트는 <ul> 태그, 음료 최소 3개
+• <ul>의 자식 요소 <ol> 요소를 넣고 가격, 사이즈를 표시
+• <ul> 태그 아래에 수평 줄을 추가하고 그 아래에 각각 음료에 대한 설명을 <p>태그에
+작성하되, 설명에서 메뉴 이름은 <span> 태그로 감싸기
+• 카페 이름은 파란색 으로 표시 ( style=“color:blue;” 속성 추가 )
+• <p> 태그 내의 음료 설명 중 메뉴 이름은 초록색 으로 표시 (style=“color: green;”)
+
+    
+실습 2. img, a 태그 실습
+• 앞에서 진행한 실습1 에 이미지를 추가
+• 이미지에 마우스를 올렸을 때 카페 이름이 나옴
+• 이미지를 클릭했을 때 https://google.com 이 새 창으로 열림 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:blue;">낭낭 카페</h1>
+    <h2>메뉴메뉴</h2>
+
+    <ul>에스프레소
+        <ol>small - 2000￦</ol>
+    </ul>
+
+    <ul>아메리카노
+        <ol>small - 2500￦</ol>
+        <ol>large - 3000￦</ol>
+    </ul>
+    
+    <ul>카페라떼
+        <ol>small - 3000￦</ol>
+        <ol>large - 3500￦</ol>
+    </ul>
+    <hr>
+
+    <p>
+        <span style="color:green;">에스프레소</span>
+        신선한 파나마산 원두로 샷을 추출하여 제공합니다.
+    </p>
+    <p>
+        <span style="color:green;">아메리카노</span>
+        신선한 에스프레소와 원하는 온도의 깨끗한 정수를 함께 제공합니다.
+    </p>
+    <p>
+        <span style="color:green;">카페라떼</span>
+        신선한 에스프레소와 원하는 온도의 신선한 우유를 함께 제공합니다.
+    </p>
+
+    <a href="https://google.com" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNNI2uBCfbPktbufKjAKxxvU8Biwt-j_M3rHbToL1fL9wFhr847BiOWCfsNX3c54QzqYo&usqp=CAU"
+        title="낭낭카페" href="https://google.com" target="_blank">
+    </a>
+</body>
+</html>
