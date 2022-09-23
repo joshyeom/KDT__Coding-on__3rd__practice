@@ -1,0 +1,175 @@
+body {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+}
+/* COMMON */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:visited {
+  color: #555;
+}
+
+/* SECTION.WRAP */
+.wrap {
+  width: 35%;
+  height: 65%;
+  background: white;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 4px 10px gainsboro;
+}
+
+/* ARTICLE.PROFILE */
+.wrap .profile .btnView1 {
+  width: 250px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  font-weight: 400;
+  background-color: orange;
+  margin: 20px 10px;
+  box-shadow: 5px 5px 15px orange;
+}
+
+.wrap .profile .btnView2 {
+  width: 250px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  font-weight: 400;
+  background-color: blue;
+  margin: 20px 10px;
+  box-shadow: 5px 5px 15px blue;
+}
+
+.wrap .profile .btnView3 {
+  width: 250px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  font-weight: 400;
+  background-color: palevioletred;
+  margin: 20px 10px;
+  box-shadow: 5px 5px 15px palevioletred;
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px 10px;
+}
+
+.profile p {
+  margin-top: 10px;
+  color: gainsboro;
+}
+
+.first-member {
+  box-shadow: 5px 5px 15px orange;
+}
+
+.second-member {
+  box-shadow: 5px 5px 15px blue;
+}
+
+.third-member {
+  box-shadow: 5px 5px 15px palevioletred;
+}
+
+/* UL.CONTACT */
+.wrap .others a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:gainsboro;
+  margin-top: 10px;
+  box-shadow: 2px 4px 10px gainsboro;
+  display: inline-block;
+}
+.others {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 다음 시간에 배우게 될 선택자입니다 :) nth-of-type() 은 가상선택자로, 몇 번째 요소인지 판단하는 요소예요. */
+/* a.on:nth-of-type(n) 은 a태그이자 .on 클래스를 갖는 n번째 요소를 선택해줍니다. */
+.wrap .others a.on:nth-of-type(1) {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:orange;
+  margin-top: 10px;
+  box-shadow: 2px 4px 10px orange;
+}
+
+.wrap .others a.on:nth-of-type(2) {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blue;
+  margin-top: 10px;
+  box-shadow: 2px 4px 10px blue;
+}
+
+.wrap .others a.on:nth-of-type(3) {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: palevioletred;
+  margin-top: 10px;
+  box-shadow: 2px 4px 10px palevioletred;
+}
+
+
+div {
+  width: 80%;
+  height: 2px;
+  background-color: gainsboro;
+  margin: 10px 10px;
+}
+/* HINT: index.html 먼저 완성한 후, member_2.html, member_3.html에서 변경되는 css 속성(ex. 배경색 등)을 아래에 추가해주세요! */
+/* MEMBER_2 CUSTOM */
+
+/* MEMBER_3 CUSTOM */
