@@ -46,15 +46,26 @@
     </ul>
 
     <script>
+      let my_width = 7;
+      let my_height = 10;
+      let my_radius = 10;
+
+
       function rectangle(a, b){
-        console.log(a * b);
+        const result = a * b;
+        return result;
       }
       function triangle(a, b){
-        console.log(a * b / 2);
+        const result = a * b / 2;
+        return result;
       }
       function circle(a){
-        console.log(a ** 2 * 3.14);
+        const result = a ** 2 * 3.14;
+        return result;
       }
+      console.log(rectangle(my_width, my_height));
+      console.log(triangle(my_width, my_height));
+      console.log(circle(5));
     </script>
   </body>
 </html>

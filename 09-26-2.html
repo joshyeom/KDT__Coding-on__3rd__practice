@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./09-26-2.css">
+    <style>
+        body {
+  position: relative;
+}
+
+p {
+  position: absolute;
+  left: 0;
+  animation: moveX 3s ease-in-out alternate;
+  width: 100%;
+}
+
+@keyframes moveX {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+    </style>
 </head>
 <body>
     <p> “As I relax on the sofa and gaze around a room a thought hits me:
