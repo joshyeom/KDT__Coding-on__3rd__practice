@@ -128,18 +128,16 @@
 ​
     <script>
       function startGame() {
-        let guessValue = prompt('UP and DOWN 게임을 시작합니다!',"");
+        console.log(Number(null));
         const answer = "10"
-        
-        while(typeof(guessValue) == typeof('s')){
-          if(Number(guessValue) < 10){
-            alert("up");
-            guessValue = prompt('UP and DOWN 게임을 시작합니다!',"");
+        while(true){
+          let guessValue = prompt('UP and DOWN 게임을 시작합니다!',"");
+          if(guessValue == 'q' || guessValue == '포기' || guessValue === null){
+            alert("포기하셨습니다...");
           } else if(Number(guessValue) > 10){
             alert("down");
-            guessValue = prompt('UP and DOWN 게임을 시작합니다!',"");
-          } else if(guessValue == 'q' || guessValue == '포기' || guessValue == null){
-            alert("포기하셨습니다...");
+          } else if(Number(guessValue) < 10){
+            alert("up");
             break;
           } else if(guessValue == answer){
             alert("10!! 정답입니다!");
